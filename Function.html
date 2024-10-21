@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+<script>
+// tack nothing return nothing (tnrn)
+// function fun(){
+//     var a=10,b=20,c;
+//     c=a+b;
+//     document.write(c,"<br>")
+// }
+// fun()
+
+
+//tack somthing return nothing (tsrn)
+//  function fun(a,b){
+//     c=a+b;
+//     document.write(c+"<br>")
+//  }
+//  fun(4,6)
+
+//tack somthing return somthing (tsrs)
+//  function fun(a,b){
+//     c=a+b;
+//     return c;
+//  }
+//  document.write(fun(4,6))
+
+//tack nothing return somthing (tnrs)
+// function fun(){
+//     a=9 , b=4;
+//     c=a+b;
+//     return c;
+// }
+// document.write(fun())
+
+
+
+//Q-1 Enter the length & width of rectangle to calculate area
+
+// tack nothing return nothing 
+// function fun(length,width){
+//     var length=10,width=20,area;
+//     area=length*width;
+//     document.write(area,"<br>")
+// }
+// fun()
+
+
+//tack somthing return nothing
+// function fun(length,width){
+//     var area;
+//     area=length*width;
+//     document.write(area,"<br>")
+// }
+// fun(10,10)
+
+
+//tack somthing return somthing
+// function fun(length,width){
+//     area=length*width;
+//     return area;
+//  }
+//  document.write(fun(2,3))
+
+
+//tack nothing return somthing
+// function fun(length,width){
+//     length=4 , width=4;
+//     area=length*width;
+//     return area;
+// }
+// document.write(fun())
+
+//Q-2 factorial with function
+//tack somthing return somthing
+//  function fun(n){
+//     var f=1 
+//     while(n>=1){
+//         f=f*n;
+//         n--;
+//     }
+//     return f;
+//  }
+//  document.write(fun(6))
+
+
+//Q-3 fibonacci sequence
+//  function fun(n){
+//      var a=0,b=1,i=2,n,c;
+//      document.write(a,"<br>")
+//      document.write(b,"<br>")
+
+//      while(i<n){
+//          c=a+b;
+//          a=b;
+//          b=c;
+//          i++
+//      }
+//      return c;
+//  }
+//  document.write(fun(10))
+
+
+
+// NESTED FUNCTION
+
+// function ram(){
+//     document.write("ram is calling");
+// }
+// function sham(){
+//     document.write("sham is calling");
+//      ram()
+// }
+// function fun(){
+//     document.write("fun is calling");
+//     sham()
+// }
+// fun()
+
+// ARROW FUNCTION
+// const sum=(a,b)=>{
+//     return a+b;
+// }
+// document.write(sum(10,20))
+
+// IIFE (Immediately Invoked Function Expression)
+(function (){
+    var a=5;
+    document.write(a)
+})();
+</script>
+</body>
+</html>
