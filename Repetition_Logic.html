@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetition Logic</title>
+</head>
+<body>
+    <script>
+//Q-1 Rev of Digits
+ // var n=123,sum=0;
+// while(n>0)
+// {
+//     rem=n%10;
+//     sum=sum*10+rem;
+//     n=Math.floor(n/10);
+// }
+// document.write(sum)
+
+
+// Q-2 Sum to Digits
+// var n=123,sum=0;
+// while(n>0)
+// {
+//     rem=n%10;
+//     sum=sum+rem;
+//     n=Math.floor(n/10);
+// }
+// document.write(sum)
+        //Prime number
+        //Prime fact
+        //Factorial
+
+
+// Q-3 Prime no.
+var flag = 0;
+var n = Number(prompt("Enter a number:"))
+if (n==0 || n==1){
+    document.write("Number is not prime OR compesite")
+}
+for(var i=2; i<n/2; i++){
+    if(n % i == 0){
+        flag=1;
+    }
+}
+if(flag == 0){
+    document.write("Number is prime")
+}
+else{
+    document.write("Number is not prime")
+}
+// Q-4 Prime fact
+// var n = Number(prompt("Enter a number: "))
+
+// var c = 2;
+// while(n > 1){
+//     if(n % c == 0){
+//         document.write(c);
+//         n=n/c;
+//     }
+//     else
+//     c++
+// } 
+  
+// Q-5 factorial 5! 5*4*3*2*1
+// var n=Number(prompt("Enter the number"));
+// var f=1;
+// while(n>=1){
+//     f=f*n;
+//     n--;
+
+//     console.log(f);
+// }
+
+
+//Q-6 Palidrome
+    //  var n = Number(prompt("Enter the palindrome number:-"));
+    //  var p=n;
+    //  var rev=0
+    //  while(n>0){
+    //     rem=n%10;
+    //     rev=rev*10+rem;
+    //     n=Math.floor(n/10);
+    //  }
+    //  if(p==rev){
+    //     document.write("This is a palindrome number:-",rev);
+    //  }
+    //  else{
+    //     document.write("This is a not palindrome number:-",p);
+    //  }
+
+ //Q-7 Armstorng
+// var n = Number(prompt("enter the number"))
+//         var rem; temp = 0;
+//         y = n;
+
+//         while (n > 0) {
+//             rem = n % 10;
+//             temp = temp + (rem * rem * rem);
+//             n = parseInt(n / 10);
+//         }
+
+//         console.log(temp);
+
+//         if (temp == y) {
+//             console.log("this is the armstrong number")
+//         }
+//         else {
+//             console.log("this is a not the armstrong number")
+//         }
+    </script>
+</body>
+</html>
