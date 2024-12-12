@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 1-Only for sum  -->
+    <!-- <h1 id="abc">Sum</h1>
+    <button onclick="fun()">Sum</button> -->
+
+<!-- 2- sum,sub,multi,div  -->
+    <h1 id="sum">Sum</h1>
+    <button onclick="fun1()">Sum</button>
+
+    <h1 id="sub">sub</h1>
+    <button onclick="fun2()">sub</button>
+
+    <h1 id="multi">multi</h1>
+    <button onclick="fun3()">multi</button>
+
+    <h1 id="Div">Div</h1>
+    <button onclick="fun4()">Div</button>
+
+
+
+    <!-- 3- Only one button click and allour ans  -->
+    <!-- <h1 id="sum">Sum</h1>
+    <h1 id="sub">sub</h1>
+    <h1 id="multi">multi</h1>
+    <h1 id="Div">Div</h1>
+    <button onclick="main()">click</button> -->
+
+
+    <script>
+//  <!-- 1> Only for sum  -->
+        // function fun(){
+        //     var a=Number(prompt("enter the a"))
+        //     var b=Number(prompt("enter the b"))
+        //     var sum=a+b;
+        //     document.getElementById("abc").innerHTML="sum="+sum
+        // }
+
+
+// 2- sum,sub,multi,div
+        function fun1(){
+            var a=Number(prompt("enter the a"))
+            var b=Number(prompt("enter the b"))
+            var sum=a+b;
+            document.getElementById("sum").innerHTML="sum="+sum
+        }
+
+        
+        function fun2(){
+            var a=Number(prompt("enter the a"))
+            var b=Number(prompt("enter the b"))
+            var sum=a-b;
+            document.getElementById("sub").innerHTML="sub="+sum
+        }
+
+
+        
+        function fun3(){
+            var a=Number(prompt("enter the a"))
+            var b=Number(prompt("enter the b"))
+            var sum=a*b;
+            document.getElementById("multi").innerHTML="multi="+sum
+        }
+
+        
+        function fun4(){
+            var a=Number(prompt("enter the a"))
+            var b=Number(prompt("enter the b"))
+            var sum=a/b;
+            document.getElementById("Div").innerHTML="Div="+sum
+        }
+
+
+// 3- Only one button click and allour ans 
+
+// let a,b;
+
+// function main(){
+//     a = Number(prompt("Enter value of a"));
+//     b = Number(prompt("Enter valueb of b"));
+//     fun();
+//     fun1();
+//     fun2();
+//     fun3();
+//     fun4();
+// }
+// function fun(){
+//     let sum=a+b;
+//     document.getElementById("sum").innerHTML = "sum =" + sum
+// }
+
+// function fun1(){
+//     let sum=a+b;
+//     document.getElementById("sum").innerHTML = "sum =" + sum
+// }
+
+// function fun2(){
+//     let sub=a-b;
+//     document.getElementById("sub").innerHTML = "sub =" + sub
+// }
+
+// function fun3(){
+//     let multi=a*b;
+//     document.getElementById("multi").innerHTML = "multi =" + multi
+// }
+     
+
+// function fun4(){
+//     let Div=a/b;
+//     document.getElementById("Div").innerHTML = "Div =" + Div
+// }
+    </script>
+</body>
+</html>

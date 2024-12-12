@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="slider">
+        <img src="" alt="" id="slider-img" width="200px" height="200px">
+    </div>
+    <button id="prev-btn">prev</button>
+    <button id="next-btn">next</button>
+    <script>
+        var sliderData=[
+            {src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXWtThpUwKA-5sjZbXTPetnGQy__mJpOhQLQ&s"},
+            {src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_-j0xCBw7b2kSNptZB7mTdIZxrSXjkasRw&s"},
+            {src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlh4d7cqg2MEFH58fWZg7StWVeoSSH11Sm9g&s"},
+        ]
+
+        var currentIndex=0;
+
+        function update(){
+            var sliderImg=document.getElementById("slider-img")
+            sliderImg.src=sliderData[currentIndex].src;
+        }
+
+        document.getElementById("prev-btn").addEventListener("click",()=>{
+         currentIndex=(currentIndex-1 + sliderData.length)%sliderData.length
+         update();9
+        })
+
+        document.getElementById("next-btn").addEventListener("click",()=>{
+         currentIndex=(currentIndex+1)%sliderData.length
+         update();
+        })
+    </script>
+</body>
+</html>

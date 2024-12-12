@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obj</title>
+</head>
+<body>
+    <script>
+        var obj={
+            name:"vivek",
+            rollno:"21",
+            hobby:["a","b","c"],
+            address:{
+                city:"ahm",
+                state:"guj",
+            },
+            fun:function(){
+              alert(":hello")
+            }
+        }
+        console.log(obj.hobby[0])
+        document.write(obj.address.city)
+        document.write(obj.fun())
+
+        obj.color="red"
+        delete obj.rollno
+        console.log(obj);
+
+        for(var value in obj){
+            document.write(value)
+        }
+    </script>
+    
+</body>
+</html>

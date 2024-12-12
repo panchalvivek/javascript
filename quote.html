@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random String Generator</title>
+</head>
+<body>
+    <button id="generateButton">Generate Random String</button>
+    <p id="result">Click the button to generate a random string.</p>
+
+    <script>
+        document.getElementById('generateButton').addEventListener('click', function () {
+            const randomString = Math.random().toString(36).substring(2, 10);
+            document.getElementById('result').textContent = randomString;
+        });
+    </script>
+</body>
+</html>
